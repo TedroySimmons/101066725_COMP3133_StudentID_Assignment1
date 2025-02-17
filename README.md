@@ -17,9 +17,8 @@ npm install
 ### 3 Configure Environment Variables
 Create a `.env` file in the root directory and add:
 ```env
-PORT=4000
+PORT=5000
 MONGO_URI=mongodb+srv://your_username:your_password@yourcluster.mongodb.net/comp3133__101066725_assigment1?retryWrites=true&w=majority
-JWT_SECRET=your_jwt_secret
 ```
 - Replace `your_username`, `your_password`, and `yourcluster` with your MongoDB Atlas info.
 
@@ -159,4 +158,3 @@ query {
    ```
 3. **Go to Body → Select GraphQL**.
 4. **Write your query or mutation** and click **Send**.
-5. If authentication is required, add **JWT Token** under **Headers**.
