@@ -42,7 +42,8 @@ mutation {
     id
     username
     email
-    createdAt
+    created_at
+    updated_at
   }
 }
 ```
@@ -71,6 +72,8 @@ query {
     email
     designation
     department
+    created_at
+    updated_at
   }
 }
 ```
@@ -84,6 +87,8 @@ query {
     email
     designation
     department
+    created_at
+    updated_at
   }
 }
 ```
@@ -102,11 +107,13 @@ mutation {
     department: "Engineering"
     employee_photo: "alice.jpg"
   ) {
-    id
+    eid
     first_name
     last_name
     email
     department
+    created_at
+    updated_at
   }
 }
 ```
@@ -120,10 +127,12 @@ mutation {
     designation: "Senior Engineer"
     salary: 6000
   ) {
-    id
+    eid
     first_name
     designation
     salary
+    created_at
+    updated_at
   }
 }
 ```
@@ -146,6 +155,8 @@ query {
     last_name
     designation
     department
+    created_at
+    updated_at
   }
 }
 ```
